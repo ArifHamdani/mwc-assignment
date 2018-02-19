@@ -13,7 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-page-3',
   templateUrl: 'page-3.html',
 })
-export class Page_3Page {
+export class Page_3Page  {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
