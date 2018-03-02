@@ -13,12 +13,13 @@ import { Page_6Page } from '../page-6/page-6';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) { 
+  constructor(public navCtrl: NavController,) { 
     
   } 
 nextPage(){ 
   this.navCtrl.push(Page_2Page);
 }
+
 
 
 }

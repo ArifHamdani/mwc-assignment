@@ -14,6 +14,7 @@ import{ Page_6Page} from '../pages/page-6/page-6';
 import { Page_7Page } from '../pages/page-7/page-7';
 import { Page_8Page } from '../pages/page-8/page-8';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -29,7 +30,8 @@ import { Page_8Page } from '../pages/page-8/page-8';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp) 
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
