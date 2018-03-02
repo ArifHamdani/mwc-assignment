@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>QUEUE UP NOW</ion-title>
+    <ion-title>HOME</ion-title>
   </ion-navbar>
  
 </ion-header>
@@ -15,24 +15,29 @@
 
 <ion-content padding> 
   
-  <ion-list>
-      <ion-item>
-        <ion-label>Illness</ion-label>
-        <ion-select [(ngModel)]="Choose">
-          <ion-option value="Fever">Fever</ion-option>
-          <ion-option value="Toothache">Toothache</ion-option>
-          <ion-option value="Coughing">Coughing</ion-option>
-          <ion-option value="Sneezing">Sneezing</ion-option>
-          <ion-option value="Muscle pain">Muscle pain</ion-option>
-        </ion-select> 
-       
-      </ion-item>
-      <ion-item>
-        <ion-label color="primary">Additional Information</ion-label>
-        <ion-input type="text" placeholder="Text Input"></ion-input>
-      </ion-item>
-        
-      
-    </ion-list> 
+   <button ion-button (click) = nextPage3(); class="greenButton">Queue up now </button>
+
+    <p> </p>
+  <table>
+    <tr>
+      <td>
+        <button ion-button (click) = " nextPage4();"class="orangeButton" >Live Queue Number</button>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <button ion-button (click) = "nextPage5();" class = "tealButton" >Details</button>
+          </tr>
+          <tr>
+            <button ion-button (click) = "nextPage6();" class="violetButton" >Location</button>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <p></p>
+  <button ion-button (click) = "nextPage7();" class="blueButton" >Contact Us</button>
+  <button ion-button (click) = "nextPage8();" class="redButton" >Sign Out</button>  
 
 </ion-content>

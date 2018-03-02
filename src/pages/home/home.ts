@@ -16,21 +16,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) { 
     
   } 
-  nextPage(){ 
-    this.navCtrl.push(Page_2Page);
-  } 
-  nextPage2(){ 
-    this.navCtrl.push(Page_3Page);
-  } 
- nextPage3(){ 
-   this.navCtrl.push(Page_4Page);
- } 
- nextPage4(){ 
-   this.navCtrl.push(Page_5Page);
- } 
- nextPage5(){ 
-   this.navCtrl.push(Page_6Page);
- }
+nextPage(){ 
+  this.navCtrl.push(Page_2Page);
+}
 
 
 }
