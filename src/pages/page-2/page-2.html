@@ -24,14 +24,29 @@
           <ion-option value="Coughing">Coughing</ion-option>
           <ion-option value="Sneezing">Sneezing</ion-option>
           <ion-option value="Muscle pain">Muscle pain</ion-option>
+          <ion-option value="Others">Others (Please type below)</ion-option>
         </ion-select> 
       </ion-item>
       
+      <p><br/></p>
+
       <ion-item>
         <ion-label color="primary" stacked>Additional Information</ion-label>
         <ion-input type="text" placeholder=""></ion-input>
       </ion-item>
-        
+      
+      <p><br/></p>
+
+      <ion-item>
+        <ion-label>Location</ion-label>
+        <ion-select [(ngModel)]="Choose">
+          <ion-option value="RIPAS">RIPAS</ion-option>
+          <ion-option value="Lambak">Lambak</ion-option>
+        </ion-select> 
+      </ion-item>
+      
+      <p><br/></p>
+
       <button ion-button id="confirmButton" >Confirm</button>
 
     </ion-list> 
