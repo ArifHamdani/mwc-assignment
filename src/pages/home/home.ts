@@ -5,6 +5,7 @@ import { Page_3Page} from '../page-3/page-3';
 import { Page_4Page } from '../page-4/page-4';
 import { Page_5Page } from '../page-5/page-5';
 import { Page_6Page } from '../page-6/page-6';
+import { Page_9Page } from '../page-9/page-9';
 
 
 @Component({
@@ -18,6 +19,9 @@ export class HomePage {
   } 
 nextPage(){ 
   this.navCtrl.push(Page_2Page);
+} 
+nextPage11(){ 
+  this.navCtrl.push(Page_9Page);
 }
 
 

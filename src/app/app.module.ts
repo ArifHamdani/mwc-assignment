@@ -12,7 +12,8 @@ import { Page_4Page} from '../pages/page-4/page-4';
 import{ Page_5Page} from '../pages/page-5/page-5'; 
 import{ Page_6Page} from '../pages/page-6/page-6';
 import { Page_7Page } from '../pages/page-7/page-7';
-import { Page_8Page } from '../pages/page-8/page-8';
+import { Page_8Page } from '../pages/page-8/page-8'; 
+import{ Page_9Page} from '../pages/page-9/page-9';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { Page_8Page } from '../pages/page-8/page-8';
     Page_5Page, 
     Page_6Page, 
     Page_7Page, 
-    Page_8Page
+    Page_8Page, 
+    Page_9Page
    
   ],
   imports: [
@@ -43,7 +45,8 @@ import { Page_8Page } from '../pages/page-8/page-8';
     Page_5Page, 
     Page_6Page, 
     Page_7Page, 
-    Page_8Page
+    Page_8Page, 
+    Page_9Page
     
   ],
   providers: [
