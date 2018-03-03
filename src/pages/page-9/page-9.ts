@@ -18,11 +18,9 @@ export class Page_9Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-nextPage10(){ 
-this.navCtrl.push(Page_2Page);
+nextPage10(){
+  this.navCtrl.push(Page_2Page);
 }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Page_9Page');
-  }
+
 
 }
