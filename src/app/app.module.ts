@@ -57,9 +57,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     Page_7Page, 
     Page_8Page, 
     Page_9Page,
-    ProfilePage,
-    AngularFireDatabase,
-    AngularFireDatabaseModule,
+    ProfilePage
+
   ],
   providers: [
     AngularFireDatabase,
