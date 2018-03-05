@@ -14,21 +14,21 @@
 
 
 <ion-content padding> 
-
- <h1> Your Number </h1>
- 
- <h3> 1 3 5 6 B </h3>
-
- <h1> Current Number </h1>
-  
-  <h3>1 2 5 7 B </h3> 
-
-  <h1>Time Left : </h1>
-
-  <h3> 24 : 0 : 0 </h3>
+    <ion-item>Illness : {{( queueData | async )?.illness}}</ion-item>
+    <ion-item>Additional Info : {{( queueData | async )?.addinfo}}</ion-item>
+    <ion-item>Location : {{( queueData | async )?.location}}</ion-item>
     
-
-
+    <h1> Your Number </h1>
+ 
+    <h3> 1 3 5 6 B </h3>
+   
+    <h1> Current Number </h1>
+     
+     <h3>1 2 5 7 B </h3> 
+   
+     <h1>Time Left : </h1>
+   
+     <h3> 24 : 00 : 00 </h3>
 
 
 </ion-content>

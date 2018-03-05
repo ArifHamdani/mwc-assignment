@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Page_2Page } from '../page-2/page-2';
+import { Observable } from 'rxjs/Observable';
+import { Queue } from '../../models/queue';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireObject } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 /**
  * Generated class for the Page_3Page page.
@@ -16,7 +21,10 @@ import { Page_2Page } from '../page-2/page-2';
 })
 export class Page_3Page  {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private toast: ToastController) {
+  queue = {} as Queue;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toast: ToastController, private afAuth: AngularFireAuth, 
+    private afDatabase: AngularFireDatabase,) {
   }
 
 
@@ -25,11 +33,14 @@ export class Page_3Page  {
   }
   
   nextPage14(){ 
-    this.navCtrl.setRoot(Page_2Page);
-    this.toast.create({
+    this.afAuth.authState.take(1).subscribe(auth =>{
+      this.afDatabase.object(`queue/${auth.uid}`).set(this.queue)
+      this.toast.create({
       message: 'You have successfully queued up. Please check Live Queue Number page for more info.',
       duration: 3000
-    }).present();
+      }).present();
+    })
+    this.navCtrl.setRoot(Page_2Page);
   }
   
 

@@ -15,9 +15,12 @@
     <ion-label stacked>Password</ion-label>
     <ion-input type="password" [(ngModel)]="user.password"></ion-input>
   </ion-item>
-<button ion-button (click)="nextPage(user);">Login</button> 
+ 
 
-<button ion-button (click)="nextPage11();">Sign Up</button>
+<button ion-button full id="logButt" (click)="nextPage(user);">Login</button> 
+
+<p id="signupText">Don't have an account? Sign Up!</p>
+<button ion-button full id="kelabu" (click)="nextPage11();">Sign Up</button>
 
 
 </ion-content>
