@@ -7,12 +7,13 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Contact Us</ion-title>
+    <ion-title>Details</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-item>Name : {{( profileData | async )?.name}}</ion-item>
+  <ion-item>Date Of Birth : {{( profileData | async )?.dob}}</ion-item>
 </ion-content>

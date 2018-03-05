@@ -7,23 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>registration</ion-title>
+    <ion-title>Registration</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding> 
-    <form>
-        Full Name : <br>
-        <input type="text" name="firstname"><br>
-        Username : <br>
-        <input type="text" name="firstname"><br> 
-        Email : <br>
-        <input type="email" name="firstname"><br>
-       Password:<br>
-        <input type="password" name="lastname">
-      </form>  
-      <button ion-button(click)="nextPage10();">Sign Up</button>
+      <ion-item>
+        <ion-label stacked>E-Mail</ion-label>
+        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+        <button ion-button (click)="nextPage10(user);">Sign Up</button>
 
 </ion-content>

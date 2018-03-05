@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { Page_2Page } from '../page-2/page-2';
 
 /**
  * Generated class for the Page_6Page page.
@@ -21,5 +23,12 @@ export class Page_6Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Page_6Page');
   }
+
+  nextPage12(){ 
+    this.navCtrl.setRoot(HomePage); 
+  }
+  nextPage13(){ 
+    this.navCtrl.setRoot(Page_2Page);
+  }    
 
 }
